@@ -1,12 +1,12 @@
 import * as anchor from "@project-serum/anchor";
 import { Program } from "@project-serum/anchor";
-import { DecentralizedTwitter } from "../target/types/decentralized_twitter";
+import { TwitterProgram } from "../target/types/twitter_program";
 
 describe("decentralized-twitter", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
 
-  const program = anchor.workspace.DecentralizedTwitter as Program<DecentralizedTwitter>;
+  const program = anchor.workspace.TwitterProgram as Program<TwitterProgram>;
 
   it("Is initialized!", async () => {
     // Add your test here.

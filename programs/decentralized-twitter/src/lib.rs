@@ -1,9 +1,9 @@
 use anchor_lang::prelude::*;
 
-declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
+declare_id!("Akgh7h4d9LzAgZVb4TxM4j86k3KDN5SuKWRDyjgJiozr");
 
 #[program]
-pub mod decentralized_twitter {
+pub mod twitter_program {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
