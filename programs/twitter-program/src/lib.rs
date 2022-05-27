@@ -64,8 +64,8 @@ pub struct SendTweet<'info> {
 
 #[error_code]
 pub enum ErrorCode {
-    #[msg("The provided topic should be 50 chars long max.")]
+    #[msg("Topic must be less than 50 characters")]
     TopicTooLong,
-    #[msg("The provided content should be 280 chars long max")]
+    #[msg("Content must be less than 280 characters")]
     ContentTooLong,
 }
